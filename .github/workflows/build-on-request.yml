@@ -18,11 +18,11 @@ jobs:
       id: setup_msbuild
 
     - name: Run vcpkg
-      uses: lukka/run-vcpkg@v7
+      uses: lukka/run-vcpkg@v7.6
       with:
         vcpkgDirectory: ${{ runner.workspace }}/vcpkg/
         vcpkgTriplet: x86-windows-static
-        vcpkgGitCommitId: 3b3bd424827a1f7f4813216f6b32b6c61e386b2e
+        vcpkgGitCommitId: c8696863d371ab7f46e213d8f5ca923c4aef2a00
         vcpkgArguments: >
           boost-iostreams boost-asio boost-beast boost-system boost-variant boost-lockfree boost-process boost-program-options boost-uuid boost-filesystem
           luajit glew physfs openal-soft libogg libvorbis zlib libzip bzip2 openssl
